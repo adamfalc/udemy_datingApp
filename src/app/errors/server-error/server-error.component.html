@@ -1,0 +1,26 @@
+<div>
+    <h1 class="text-danger">Internal Server Error</h1>
+    <h4>Refreshing the page will loose the error</h4>
+
+    <ng-container *ngIf="error">
+            <h5 class="text-warning">
+                    Error: {{error.message}}
+            </h5>
+            <div class="container">
+            <p class="font-weight-bold">If you are seeing this, Angular is not to blame!</p>
+            <p class="font-weight-bold">For Once</p>
+            <p class="font-weight-bold">500 == my fault</p>
+
+            <ul>
+                <li>Open chrome dev tools, check the failing request in the network tab</li>
+                <li>You can filter on: Fetch/XHR and 3rd party requests</li>
+            </ul>
+            <div style="background-color: black;">
+                <p class="font-weight-bold">Stack Trace:</p>
+                <code class="mt-4">{{error.details}}</code>
+            </div>
+        </div>
+
+    </ng-container>
+
+</div>
