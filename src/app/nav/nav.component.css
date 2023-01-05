@@ -1,0 +1,11 @@
+.dropdown-toggle, .dropdown-item{
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.dropdown-item{
+    margin-top: 4px;
+}
